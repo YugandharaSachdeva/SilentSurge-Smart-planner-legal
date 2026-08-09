@@ -41,10 +41,11 @@ hr{border:0;border-top:1px solid #e5e7eb;margin:2rem 0}
 <strong>Public developer name:</strong> Sachdeva<br />
 <strong>Legal owner and privacy controller:</strong> Yugandhara Sachdeva, an individual developer based in India<br />
 <strong>Privacy and grievance contact:</strong> silentsurgesupport@gmail.com<br />
-<strong>Effective date and last updated:</strong> 28 July 2026</p>
+<strong>Effective date:</strong> 28 July 2026<br />
+<strong>Last updated:</strong> 10 August 2026</p>
 <h2>1. Scope</h2>
 <p>This Privacy Policy explains how SilentSurge: Smart Planner + (“SilentSurge: Smart Planner +,” the “App,” “we,” “us,” or “our”) handles information when you use the Android or iOS App, contact support, use optional AI or voice features, view advertisements, enable analytics or crash diagnostics, or make a purchase.</p>
-<p>SilentSurge: Smart Planner + is a local-first productivity and planning application. Most planner content remains on the device. Network communication is used only for features that require it, including advertising, purchases, optional analytics and crash diagnostics, support communications, and optional AI features.</p>
+<p>SilentSurge: Smart Planner + is a local-first productivity and planning application. Most planner content remains on the device. Network communication is used only for features that require it, including advertising, purchases, optional analytics and crash diagnostics, support communications, and optional AI features. Certain AI requests are securely relayed through Google Firebase / Google Cloud infrastructure to the AI provider; this does not create SilentSurge cloud sync or a SilentSurge account.</p>
 <p>Where consent or another specific choice is required, the App provides an appropriate in-app, consent-management, marketplace, or operating-system control.</p>
 <h2>2. Information stored on your device</h2>
 <p>You may create or enter tasks, subtasks, goals, schedules, reminders, completion records, notes, handwriting, planner layouts, theme and music preferences, notification settings, and AI output that you choose to save or apply.</p>
@@ -52,17 +53,21 @@ hr{border:0;border-top:1px solid #e5e7eb;margin:2rem 0}
 <p>SilentSurge: Smart Planner + does not require a SilentSurge: Smart Planner + account or login and does not currently provide its own cloud sync, account-based backup, or cross-device recovery. Local content may be lost if you uninstall the App, clear its storage, reset or lose the device, or experience device or storage failure. Device operating systems, device backups, device-management software, or other applications may independently affect how local data is copied, restored, or deleted.</p>
 <p>Planner content is not transmitted merely because it exists in the App. It leaves the device only when you deliberately use a feature that requires transmission, such as submitting an AI prompt, sending a support message, or completing a marketplace purchase.</p>
 <h2>3. AI features</h2>
-<p>SilentSurge: Smart Planner + may provide optional AI-powered planning or productivity features through a third-party artificial-intelligence service provider. Availability and request limits may vary by subscription tier.</p>
-<p>An AI request is sent only when you deliberately submit it. The App may transmit:</p>
+<p>SilentSurge: Smart Planner + provides optional AI-powered features using DeepSeek, operated by Hangzhou DeepSeek Artificial Intelligence Co., Ltd. Availability, supported functions, and request limits may vary by subscription tier. Depending on the tier and feature, AI functionality may include planning and productivity assistance, general-purpose user questions, and AI-generated productivity insights.</p>
+<p>AI processing occurs only when you deliberately use an AI feature that requires an online request. The App may transmit:</p>
 <ul>
-<li>the text or other content that you intentionally submit through the AI feature;</li>
-<li>language, formatting, safety, and technical request information necessary to process and secure that request; and</li>
-<li>limited active-session context created within the AI feature when needed to produce a coherent response.</li>
+<li>the text or other content that you intentionally submit through AI Coach or another user-initiated AI input;</li>
+<li>language, formatting, safety, request-type, tier, date, and technical information needed to process, secure, validate, and return that request;</li>
+<li>limited active-session context created within the AI feature when needed to produce a coherent response; and</li>
+<li>for a user-initiated Premium AI Insight, limited derived planner information such as aggregate task, habit, or goal statistics, completion trends, covered or recent topic identifiers, and approved productivity-tip identifiers or metadata needed to generate the requested insight.</li>
 </ul>
-<p>SilentSurge: Smart Planner + does not automatically add your planner, unrelated tasks, schedules, goals, notes, handwriting, or onboarding display name to an AI request merely because that information exists in the App. If you deliberately type, paste, dictate, or otherwise submit such information through the AI feature, it becomes part of the request.</p>
-<p>Before the first AI request is transmitted, the App will identify the active AI provider, link to its privacy notice, explain the categories of information sent and the purpose of the transmission, and obtain any permission required by applicable law or platform policy. The provider may process prompts, outputs, request logs, security signals, and technical metadata under its own terms and privacy notice, including any disclosed retention or model-improvement practices.</p>
-<p>SilentSurge: Smart Planner + does not maintain a permanent, user-visible AI chat archive. If you save or apply an AI response, that response becomes ordinary device-local planner content. Closing the AI screen does not necessarily delete information already processed by the AI provider.</p>
-<p>Do not submit passwords, complete payment-card details, government identification numbers, confidential patient information, medical records, or other information that you do not want processed by an AI provider.</p>
+<p>For Premium AI Insights, SilentSurge: Smart Planner + is designed to minimise the information sent. Raw task titles, notes, handwriting, the onboarding display name, and the complete planner are not sent merely to generate an insight. Ordinary planner content is not transmitted merely because it exists in the App.</p>
+<p>For AI Coach, SilentSurge: Smart Planner + does not automatically add unrelated planner entries, schedules, goals, notes, handwriting, or the onboarding display name to your request. If you deliberately type, paste, dictate, or otherwise submit such information through AI Coach, it becomes part of the request.</p>
+<p>AI requests are sent from the App to a Firebase Cloud Function operated for SilentSurge: Smart Planner + and then relayed to DeepSeek. The DeepSeek API credential is stored server-side using Google Cloud Secret Manager and is not intentionally embedded in the distributed App. Firebase App Check is used to help verify legitimate App requests and protect the AI relay from abuse. These infrastructure services may process technical request, network, security, attestation, and service-operation information necessary to provide and protect the feature.</p>
+<p>Before the first AI request is transmitted, the App will identify DeepSeek as the AI provider, explain the categories of information sent and the purpose of the transmission, provide access to relevant provider information, and obtain any permission required by applicable law or platform policy. DeepSeek may process inputs, outputs, request logs, security signals, network information, and other technical metadata in connection with providing, securing, maintaining, and improving its services, subject to the applicable DeepSeek Open Platform terms and provider materials.</p>
+<p>DeepSeek is based in China. Information transmitted for AI processing may be processed in China and in other locations used by DeepSeek or its service providers, subject to applicable law and safeguards described in this Policy.</p>
+<p>SilentSurge: Smart Planner + does not maintain a permanent, user-visible server-side AI chat archive. The SilentSurge Firebase relay is not designed to store prompts, responses, planner data, or conversation history as an AI archive. If you save or apply an AI response, that response becomes ordinary device-local planner content. Closing the AI screen does not necessarily delete information already processed by DeepSeek.</p>
+<p>Do not submit passwords, complete payment-card details, government identification numbers, confidential patient information, medical records, or other sensitive or confidential information that you do not want processed by an AI provider.</p>
 <h2>4. Voice Planner</h2>
 <p>Voice Planner is separate from the AI Coach. Microphone access begins only after you use the voice control and grant operating-system permission.</p>
 <p>Voice Planner is designed to use on-device speech recognition. SilentSurge: Smart Planner + does not intentionally upload or retain raw microphone audio. A transcript remains local unless you deliberately submit that text through an online feature, such as an AI request or support message.</p>
@@ -124,9 +129,9 @@ hr{border:0;border-top:1px solid #e5e7eb;margin:2rem 0}
 <h2>10. Purposes and legal bases</h2>
 <p>Depending on the jurisdiction and the particular processing, SilentSurge: Smart Planner + relies on one or more of the following legal bases:</p>
 <ul>
-<li><strong>Providing the service or performing a contract:</strong> to operate requested App functions, process purchases and subscriptions, submit an AI request that you initiate, and respond to support requests.</li>
+<li><strong>Providing the service or performing a contract:</strong> to operate requested App functions, process purchases and subscriptions, submit and securely relay an AI request that you initiate, return requested AI output, and respond to support requests.</li>
 <li><strong>Consent:</strong> for Firebase Analytics, Firebase Crashlytics, personalised advertising, tracking, access to the microphone, and other processing where consent is required. You may withdraw consent for future processing through the relevant App, provider, marketplace, or device control.</li>
-<li><strong>Legitimate interests:</strong> where permitted, to secure the App, prevent fraud and invalid traffic, maintain reliability, respond to requests, protect legal rights, and provide permitted contextual or limited advertising, provided those interests are not overridden by your rights.</li>
+<li><strong>Legitimate interests:</strong> where permitted, to secure the App and its online infrastructure, use App Check and related technical protections, prevent abuse, fraud and invalid traffic, maintain reliability, respond to requests, protect legal rights, and provide permitted contextual or limited advertising, provided those interests are not overridden by your rights.</li>
 <li><strong>Legal obligations:</strong> to comply with accounting, tax, consumer-protection, law-enforcement, regulatory, and other legal duties.</li>
 <li><strong>Other lawful grounds:</strong> where a different basis is available under applicable law.</li>
 </ul>
@@ -134,23 +139,24 @@ hr{border:0;border-top:1px solid #e5e7eb;margin:2rem 0}
 <h2>11. Recipients and third parties</h2>
 <p>Information may be processed by or disclosed to the following recipients or categories of recipients, only as relevant to the feature used:</p>
 <ul>
-<li>a third-party AI service provider selected for the AI feature;</li>
+<li>DeepSeek (Hangzhou DeepSeek Artificial Intelligence Co., Ltd.) for user-initiated AI requests and AI-generated insights;</li>
+<li>Google Firebase and Google Cloud services used to operate and secure the AI relay, including Cloud Functions, Secret Manager, and Firebase App Check;</li>
 <li>Google AdMob, Google UMP, and advertising, bidding, measurement, consent, and fraud-prevention partners operating through the advertising stack;</li>
-<li>Google Firebase Analytics and Firebase Crashlytics;</li>
+<li>Google Firebase Analytics and Firebase Crashlytics, only in accordance with the optional choices described in Sections 6 and 7;</li>
 <li>Apple and Google for marketplace billing and entitlement management;</li>
-<li>operating-system and device services used for permissions, on-device speech recognition, and notifications;</li>
+<li>operating-system and device services used for permissions, on-device speech recognition, notifications, and platform security;</li>
 <li>professional advisers, regulators, courts, law-enforcement bodies, or public authorities where disclosure is lawfully required; and</li>
 <li>a successor in a genuine reorganisation, financing, merger, sale, or transfer, subject to applicable legal safeguards.</li>
 </ul>
-<p>Depending on the service and applicable law, a provider may act as our processor or service provider, or as an independent controller under its own privacy notice. Third-party privacy notices and terms apply to their processing.</p>
+<p>Depending on the service and applicable law, a provider may act as our processor or service provider, or as an independent controller under its own applicable terms or privacy materials. Third-party terms and privacy materials apply to their own processing where relevant.</p>
 <h2>12. International processing and transfers</h2>
-<p>SilentSurge: Smart Planner + is operated from India and may be distributed internationally. Google, Apple, advertising partners, and a future AI provider may process information in India, the United States, Europe, or other countries where they or their subprocessors operate. Privacy laws and government-access rules differ between countries.</p>
-<p>Where an international transfer is subject to the GDPR, UK GDPR, or another transfer restriction, we rely on an available lawful mechanism, such as an adequacy decision, approved contractual safeguards, a provider’s applicable data-processing terms, or another legally recognised basis.</p>
+<p>SilentSurge: Smart Planner + is operated from India and may be distributed internationally. Google, Apple, advertising partners, DeepSeek, and their relevant subprocessors may process information in India, the United States, Europe, China, or other countries where they operate. DeepSeek’s published privacy materials state that Personal Data it collects in connection with its services may be processed and stored in the People’s Republic of China. Privacy laws and government-access rules differ between countries.</p>
+<p>Where an international transfer is subject to the GDPR, UK GDPR, or another transfer restriction, we rely on an available lawful mechanism, such as an adequacy decision, approved contractual safeguards, applicable provider data-processing terms, explicit consent where legally appropriate, or another legally recognised basis.</p>
 <h2>13. Retention and deletion</h2>
 <p>We keep or permit providers to keep information only for as long as reasonably necessary for the purpose for which it was processed, subject to legal, security, fraud-prevention, dispute, and marketplace requirements.</p>
 <ul>
 <li><strong>Device-local planner content and display name:</strong> retained on the device until you edit or delete it, clear App data, uninstall the App, or the device removes it.</li>
-<li><strong>AI content:</strong> SilentSurge: Smart Planner + does not maintain a permanent AI chat archive. A selected provider may retain prompts, outputs, and technical logs for the period stated in its notice or service terms. Saved AI output remains locally until you delete it.</li>
+<li><strong>AI content:</strong> SilentSurge: Smart Planner + does not maintain a permanent server-side AI chat archive. The Firebase AI relay is not designed to store prompts, responses, planner data, or conversation history as an archive. DeepSeek may retain or otherwise process inputs, outputs, technical logs, security information, and related metadata as described in the applicable DeepSeek Open Platform terms and provider materials. Saved AI output remains locally until you delete it.</li>
 <li><strong>Firebase Analytics:</strong> retained according to the Firebase settings selected and periodically reviewed using the criteria described in Section 6.</li>
 <li><strong>Firebase Crashlytics:</strong> subject to Google’s stated 90-day retention period for covered crash data and associated identifiers before removal begins.</li>
 <li><strong>Advertising information:</strong> retained by Google and enabled advertising partners according to their own policies, consent status, contractual settings, fraud-prevention needs, and legal obligations.</li>
@@ -159,8 +165,8 @@ hr{border:0;border-top:1px solid #e5e7eb;margin:2rem 0}
 </ul>
 <p>Because SilentSurge: Smart Planner + has no account and most planner content remains only on the device, we may not possess or be able to identify that local content. You can delete local information through the App’s controls, by clearing App storage, or by uninstalling the App. Disabling Analytics or Crash Diagnostics stops future collection but does not necessarily erase information already processed by a provider. You may contact us to exercise any deletion right that applies to information we can reasonably identify and control.</p>
 <h2>14. Security</h2>
-<p>We use reasonable technical and organisational safeguards appropriate to the App’s architecture, including data minimisation, encrypted transmission where information leaves the device, operating-system permission controls, restricted developer access, secure handling of credentials and secrets, and review of third-party SDK configurations.</p>
-<p>No storage or transmission method is completely secure. Device compromise, malware, insecure backups, shared-device access, device loss, operating-system vulnerabilities, or third-party incidents may expose information. You are responsible for protecting your device and marketplace account.</p>
+<p>We use reasonable technical and organisational safeguards appropriate to the App’s architecture, including data minimisation, encrypted transmission where information leaves the device, operating-system permission controls, restricted developer access, secure handling of credentials and secrets, server-side storage of the DeepSeek API credential through Google Cloud Secret Manager, Firebase App Check for protected backend requests, and review of third-party SDK configurations.</p>
+<p>No storage, attestation, or transmission method is completely secure. Device compromise, malware, insecure backups, shared-device access, device loss, operating-system vulnerabilities, provider incidents, or attempts to circumvent security controls may expose information. You are responsible for protecting your device and marketplace account.</p>
 <h2>15. Your choices and privacy rights</h2>
 <p>You can:</p>
 <ul>
@@ -169,7 +175,7 @@ hr{border:0;border-top:1px solid #e5e7eb;margin:2rem 0}
 <li>revisit advertising privacy choices when the UMP privacy-options entry is required or available;</li>
 <li>change microphone, notification, and iOS tracking permissions in device settings;</li>
 <li>manage or cancel subscriptions through Apple or Google;</li>
-<li>choose not to use AI features; and</li>
+<li>choose not to use AI features and, where applicable, exercise provider-related privacy rights using the procedures made available for the relevant AI service; and</li>
 <li>contact us at silentsurgesupport@gmail.com.</li>
 </ul>
 <p>Depending on your location, you may have rights to information, access, correction, deletion, restriction, objection, withdrawal of consent, portability, or complaint to a regulator. Residents of applicable United States states may also have rights to confirm processing, obtain a copy, correct, delete, opt out of targeted advertising or certain sale or sharing, and appeal a denied request where the law provides that right.</p>
